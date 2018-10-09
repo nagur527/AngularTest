@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body{
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 100%;
+}
+.pointer{
+    cursor:pointer;
+}
+.wrapper{
+    &__item {
+        display: inline-block;
+        width: 45%;
+        border: 1px solid #ccc;
+        margin: 1%;
+        padding: 1%;
+        transition: box-shadow 0.2s linear;
+        &:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, .23), 0 10px 30px rgba(0, 0, 0, .19);
+            -moz-box-shadow: 0 6px 10px rgba(0, 0, 0, .23), 0 10px 30px rgba(0, 0, 0, .19);
+            -web-kit-box-shadow: 0 6px 10px rgba(0, 0, 0, .23), 0 10px 30px rgba(0, 0, 0, .19);
+        }
+    }
+}

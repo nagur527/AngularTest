@@ -1,7 +1,9 @@
-
-
-<ul>
-  <li *ngFor="let user of users;" (click)="gotoUserDetails(user)">
-   <span>{{user.name}}</span>
-  </li>
-</ul> 
+<h2>
+  User List
+</h2>
+<div class="wrapper">
+  <div class="wrapper__item pointer" *ngFor="let user of users;" (click)="gotoUserDetails(user)">
+   <div>Name : {{user.name}}</div>
+   <div>Email : {{user.email}}</div>
+  </div>
+</div>
